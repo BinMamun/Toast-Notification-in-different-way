@@ -27,7 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  background: rgb(238, 238, 238);
 }
 
 .toast {
@@ -43,7 +43,7 @@
   display: flex;
   background: var(--light);
   align-items: center;
-  border-radius: 10px;
+  border-radius: 8px;
   margin-bottom: 10px;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
 }
@@ -72,6 +72,18 @@
 
 .success {
   border-left: 6px solid var(--success);
+  position: relative;
+}
+
+.success::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  left: 0px;
+  bottom: 0;
+  background: var(--success);
+  animation: anim 5s linear forwards;
 }
 
 .toast-content .triangle {
@@ -79,7 +91,19 @@
 }
 
 .warning {
+  position: relative;
   border-left: 6px solid var(--warning);
+}
+
+.warning::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  left: 0px;
+  bottom: 0;
+  background: var(--warning);
+  animation: anim 5s linear forwards;
 }
 
 .toast-content .exclamation {
@@ -87,7 +111,19 @@
 }
 
 .error {
+  position: relative;
   border-left: 6px solid var(--error);
+}
+
+.error::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  left: 0px;
+  bottom: 0;
+  background: var(--error);
+  animation: anim 5s linear forwards;
 }
 
 .toast-content .info-icon {
@@ -95,7 +131,25 @@
 }
 
 .info {
+  position: relative;
   border-left: 6px solid var(--info);
+}
+
+.info::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  left: 0px;
+  bottom: 0;
+  background: var(--info);
+  animation: anim 5s linear forwards;
+}
+
+@keyframes anim {
+  100% {
+    width: 0%;
+  }
 }
 
 /*buttons*/
