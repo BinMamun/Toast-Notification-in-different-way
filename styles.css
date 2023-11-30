@@ -6,3 +6,90 @@
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
+
+:root {
+  --light: #fff;
+  --success: #0abf30;
+  --warning: #e9bd0c;
+  --error: #e24d4c;
+  --info: #3498db;
+
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.toast {
+  width: 400px;
+  border-radius: 10px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.toast-content {
+  padding: 10px;
+  display: flex;
+  background: var(--light);
+  align-items: center;
+
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.toast-content .messgae {
+  font-weight: 400;
+  color: #343434;
+  margin: 10px 15px;
+}
+
+.toast-content .text-1 {
+  font-weight: 600;
+}
+
+.toast-content .close {
+  font-size: 14px;
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+
+.toast-content .check {
+  color: var(--success);
+  font-size: 20px;
+}
+
+.success {
+  border-left: 6px solid var(--success);
+}
+
+.toast-content .triangle {
+  color: var(--warning);
+}
+
+.warning {
+  border-left: 6px solid var(--warning);
+}
+
+.toast-content .exclamation {
+  color: var(--error);
+}
+
+.error {
+  border-left: 6px solid var(--error);
+}
+
+.toast-content .info-icon {
+  color: var(--info);
+}
+
+.info {
+  border-left: 6px solid var(--info);
+}

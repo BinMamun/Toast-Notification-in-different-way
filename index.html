@@ -5,11 +5,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Toast Notification</title>
-  <link rel="stylesheet" href="./scripts.js">
+  <link rel="stylesheet" href="./styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-
+  <div class="container">
+    <div class="toast">
+      <div class="toast-content success">
+        <i class="fa fa-check-circle check"></i>
+        <div class="messgae">
+          <span class="text-1">Success!</span>
+          <span class="text-2">Your data saved successfully</span>
+        </div>
+        <i class="fa fa-close close"></i>
+      </div>
+      <div class="toast-content warning">
+        <i class="fa fa-exclamation-triangle triangle"></i>
+        <div class="messgae">
+          <span class="text-1">Warning!</span>
+          <span class="text-2">You have warning</span>
+        </div>
+        <i class="fa fa-close close"></i>
+      </div>
+      <div class="toast-content error">
+        <i class="fa fa-exclamation-circle exclamation"></i>
+        <div class="messgae">
+          <span class="text-1">Error!</span>
+          <span class="text-2">Your data is not saved</span>
+        </div>
+        <i class="fa fa-close close"></i>
+      </div>
+      <div class="toast-content info">
+        <i class="fa fa-info-circle info-icon"></i>
+        <div class="messgae">
+          <span class="text-1">Info!</span>
+          <span class="text-2">This is a info toast</span>
+        </div>
+        <i class="fa fa-close close"></i>
+      </div>
+    </div>
+  </div>
   <script src="./scripts.js"></script>
 </body>
 
