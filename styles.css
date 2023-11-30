@@ -10,10 +10,14 @@
 :root {
   --light: #fff;
   --success: #0abf30;
-  --warning: #e9bd0c;
+  --warning: #ffce0c;
   --error: #e24d4c;
   --info: #3498db;
 
+  --darksuccess: #00901f;
+  --darkwarning: #dfb612;
+  --darkerror: #bf3939;
+  --darkinfo: #2d82ba;
 }
 
 .container {
@@ -112,20 +116,48 @@
   border-radius: 5px;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .btn-success {
   background: var(--success);
 }
 
+.btn-success:hover {
+  color: white;
+  background: var(--darksuccess);
+}
+
+.btn-success:active,
+.btn-error:active,
+.btn-warning:active,
+.btn-info:active {
+  transform: scale(90%);
+}
+
 .btn-warning {
   background: var(--warning);
+}
+
+.btn-warning:hover {
+  color: white;
+  background: var(--darkwarning);
 }
 
 .btn-error {
   background: var(--error);
 }
 
+.btn-error:hover {
+  color: white;
+  background: var(--darkerror);
+}
+
 .btn-info {
   background: var(--info);
+}
+
+.btn-info:hover {
+  color: white;
+  background: var(--darkinfo);
 }
